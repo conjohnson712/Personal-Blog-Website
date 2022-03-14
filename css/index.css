@@ -1,0 +1,48 @@
+.nested-grid{
+    display: flex;
+    flex-direction: column;
+    padding: 0.05em;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.nested-grid > *{
+    border: 2px solid #044D33
+}
+
+
+.card {
+    display: grid;
+    box-shadow: 0 2px 4px 0 #ffffff;
+    transition: 0.3s;
+    font-size: 20px;
+    padding: 2px 10px;
+    margin: 1em;
+    background-color: #054e1b;
+    color: #ffffff;    
+}
+
+
+.card:hover{
+    box-shadow: 0 4px 8px 0 #ffffff;
+}
+
+
+.sidebar{
+    grid-area:sd;
+    width: 90%;
+    border: 2px solid #ffffff;
+    background-color: #145781;
+    margin: 1em;
+}
+
+
+.content{
+    grid-area:main;
+    width: 90%;
+    border: 2px solid #ffffff;
+    background-color: #145781;
+    margin: 1em;
+}
